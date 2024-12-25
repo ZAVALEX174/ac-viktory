@@ -4,6 +4,8 @@
     --color-orange: #ed6b50;
     --color-green: #777a5c;
     --color-light-bule: #4f627f;
+    --bg-title: #212934;
+    --section-gradient: linear-gradient(180deg, #4f627f 0%, rgba(79, 98, 127, 0.35) 15%, rgba(79, 98, 127, 0.35) 85%, #4f627f 100%);
 }
 
 * {
@@ -66,6 +68,29 @@ body {
     max-width: 1185px;
     width: 100%;
     padding: 0 30px;
+}
+
+.sections-title {
+    position: relative;
+    padding-left: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.75rem, 1.4921rem + 1.1003vw, 2.8125rem);
+    text-transform: uppercase;
+    color: var(--color-orange);
+}
+
+.sections-title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    max-width: 471px;
+    width: 100%;
+    height: 100px;
+    background: url("../images/cel_icon.svg");
+    left: -406px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*шапка*/
@@ -321,5 +346,22 @@ body {
                 background: linear-gradient(90deg, #777a5c 0%, #777a5c 100%);
             }
         }
+    }
+}
+
+/*services*/
+.services {
+    width: 100%;
+    padding: 0;
+
+    .title__wrapper {
+        padding: 32px 0;
+        background: var(--bg-title);
+    }
+
+    .services__content {
+        background: var(--section-gradient);
+        min-height: 573px;
+        padding: 44px 0 64px;
     }
 }
