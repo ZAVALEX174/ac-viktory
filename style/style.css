@@ -390,7 +390,7 @@ body {
     border-radius: 30px;
     margin-bottom: 30px;
 
-    .tabs-trigger__item {
+    .tabs-trigger__item, .tabs-trigger__item2 {
         padding: 0 18px;
         display: flex;
         align-items: center;
@@ -407,7 +407,7 @@ body {
         transition: 0.2s linear all;
     }
 
-    .tabs-trigger__item:hover {
+    .tabs-trigger__item:hover, .tabs-trigger__item2:hover {
         background: var(--color-light-bule);
     }
 
@@ -419,8 +419,61 @@ body {
 .tabs-content {
     position: relative;
 
-    .tabs-content__item {
+    .tabs-content__item, .tabs-content__item2 {
         display: none;
+    }
+
+    .tabs-content__item2 {
+        flex-direction: column;
+    }
+
+    .filter {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 30px;
+
+        span {
+            display: inline-flex;
+            font-family: 'Roboto', sans-serif;
+            font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-right: 20px;
+        }
+
+        .filter-wrap-btns {
+            border: 2px solid var(--color-light-bule);
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+
+            .tabs-trigger__item2-f {
+                font-family: 'Roboto', sans-serif;
+                font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+                font-weight: 400;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                line-height: 34px;
+                height: 34px;
+                color:rgba(255, 255, 255, 0.5);
+                padding: 0 18px;
+                transition: all 0.2s;
+                border-radius: 30px;
+                text-decoration: none;
+            }
+
+            .tabs-trigger__item2-f:hover {
+                background-color: var(--color-green);
+            }
+
+            .tabs-trigger__item2-f--active {
+                color: var(--color-base);
+                background-color: var(--color-light-bule);
+            }
+        }
     }
 
     .tabs-content__item--active {
@@ -527,6 +580,13 @@ body {
     }
 }
 
-.tabs-triggers__arsenal-civilian-weapons {
-    max-width: 100%;
+
+.arsenal-civilian-weapons__content {
+    .tabs-triggers__arsenal-civilian-weapons {
+        max-width: 100%;
+    }
+
+    .arsenal-civilian-weapons__slider {
+        width: 100%;
+    }
 }
