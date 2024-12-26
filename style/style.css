@@ -361,7 +361,172 @@ body {
 
     .services__content {
         background: var(--section-gradient);
-        min-height: 573px;
+        /*min-height: 573px;*/
         padding: 44px 0 64px;
+
+        @media (max-width: 899px) {
+            display: flex;
+            flex-direction: column;
+            /*min-height: 100%;*/
+        }
     }
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100%;*/
+}
+
+.tabs-triggers {
+    max-width: 933px;
+    padding: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--color-green);
+    background: var(--color-dart-blue);
+    border-radius: 30px;
+    margin-bottom: 30px;
+
+    .tabs-trigger__item {
+        padding: 0 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 39px;
+        color: var(--color-base);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        line-height: 39px;
+        font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+        background: transparent;
+        border-radius: 30px;
+        transition: 0.2s linear all;
+    }
+
+    .tabs-trigger__item:hover {
+        background: var(--color-light-bule);
+    }
+
+    .tabs-trigger__item--active {
+        background: var(--color-green);
+    }
+}
+
+.tabs-content {
+    position: relative;
+
+    .tabs-content__item {
+        display: none;
+    }
+
+    .tabs-content__item--active {
+        display: flex;
+        width: 100%;
+        gap: 5px;
+
+        @media (max-width: 899px) {
+            flex-direction: column;
+            height: auto;
+        }
+    }
+}
+
+.services-content__text {
+    width: calc((100% - 5px) / 2);
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 899px) {
+        width: 100%;
+    }
+
+
+    .services-content__title {
+        font-family: 'Roboto', sans-serif;
+        font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+        font-weight: 800;
+        line-height: 23.44px;
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    .services-content__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        list-style-type: none;
+        margin-bottom: 30px;
+    }
+
+    .services-content__item {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        width: 100%;
+
+        svg {
+            margin-right: 13px;
+        }
+    }
+
+    .services-content__desc {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 25px;
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+            font-weight: 400;
+            line-height: 23.44px;
+            text-align: left;
+        }
+    }
+}
+
+.services-content__slider {
+    width: calc((100% - 5px) / 2);
+
+    @media (max-width: 899px) {
+        width: 100%;
+    }
+
+    .mySwiper1 {
+        height: 382px;
+    }
+
+    .swiper-wrapper {
+        height: 355px;
+    }
+
+    .swiper-slide {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .swiper-pagination.services-content__slider-pagination {
+        top: auto;
+        bottom: 0;
+    }
+    .swiper-pagination-progressbar {
+        background: rgba(25, 32, 43, 1);
+    }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background: var(--color-green);
+    }
+}
+
+.tabs-triggers__arsenal-civilian-weapons {
+    max-width: 100%;
 }
