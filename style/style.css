@@ -1151,3 +1151,110 @@ body {
         }
     }
 }
+
+.shooter {
+    width: 100%;
+
+    .shooter-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .shooter-body__title {
+            width: 100%;
+            color: var(--color-green);
+            font-family: 'Roboto', sans-serif;
+            font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        .shooter__list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: minmax(200px, 340px) 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 'pasp razr'
+            'age spravka';
+            gap: 20px 40px;
+
+            @media (max-width: 899px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .pasp {
+                @media (max-width: 499px) {
+                    display: flex;
+                    order: 0;
+                }
+            }
+
+            .razr {
+                @media (max-width: 499px) {
+                    display: flex;
+                    order: 2;
+                }
+            }
+
+            .age {
+                @media (max-width: 499px) {
+                    display: flex;
+                    order: 1;
+                }
+            }
+
+            .spravka {
+                @media (max-width: 499px) {
+                    display: flex;
+                    order: 3;
+                }
+            }
+
+            .shooter__text {
+                display: flex;
+
+                svg {
+                    width: 52px;
+                    height: 52px;
+                    margin-right: 20px;
+                    flex-shrink: 0;
+
+                    @media (max-width: 499px) {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    padding-top: 8px;
+                    color: var(--color-base);
+                    font-family: 'Roboto', sans-serif;
+                    font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
+                    font-weight: 400;
+                    line-height: 1.2;
+                    text-align: left;
+
+                    span {
+                        padding: 0;
+                        margin: 0;
+                        display: inline-block;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: clamp(0.625rem, 0.5947rem + 0.1294vw, 0.75rem);
+                        font-weight: 400;
+                        line-height: 1.2;
+                        text-align: left;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
