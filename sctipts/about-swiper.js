@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper1", {
+var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 1,
     // spaceBetween: 10,
     speed: 1500,
