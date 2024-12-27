@@ -1,5 +1,32 @@
 const openSectionBtn = document.querySelector('.mob-title-menu');
 const openSectionBtn2 = document.querySelector('.mob-title-menu2');
+const openSectionBtn3 = document.querySelector('.mob-title-menu3');
+
+
+
+openSectionBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    document.querySelectorAll('.tabs-trigger__item').forEach((child) => {
+        child.classList.remove('tabs-trigger__item--visible');
+
+        child.classList.add('tabs-trigger__item--visible');
+
+        child.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            let valueChild = e.target.textContent;
+            console.log(valueChild);
+
+            openSectionBtn.textContent = valueChild;
+
+            document.querySelectorAll('.tabs-trigger__item').forEach((child) => {
+                child.classList.remove('tabs-trigger__item--visible');
+            });
+        })
+    });
+})
+
 
 openSectionBtn2.addEventListener('click', (e) => {
     e.preventDefault();
@@ -24,24 +51,26 @@ openSectionBtn2.addEventListener('click', (e) => {
     });
 })
 
-openSectionBtn.addEventListener('click', (e) => {
+
+
+openSectionBtn3.addEventListener('click', (e) => {
     e.preventDefault();
 
-    document.querySelectorAll('.tabs-trigger__item').forEach((child) => {
-        child.classList.remove('tabs-trigger__item--visible');
+    document.querySelectorAll('.tabs-trigger__item3').forEach((child) => {
+        child.classList.remove('tabs-trigger__item3--visible');
 
-        child.classList.add('tabs-trigger__item--visible');
+        child.classList.add('tabs-trigger__item3--visible');
 
         child.addEventListener('click', (e) => {
             e.preventDefault();
 
-            let valueChild = e.target.textContent;
-            console.log(valueChild);
+            let valueChild3 = e.target.textContent;
+            // console.log(valueChild3);
 
-            openSectionBtn.textContent = valueChild;
+            openSectionBtn3.textContent = valueChild3;
 
-            document.querySelectorAll('.tabs-trigger__item').forEach((child) => {
-                child.classList.remove('tabs-trigger__item--visible');
+            document.querySelectorAll('.tabs-trigger__item3').forEach((child) => {
+                child.classList.remove('tabs-trigger__item3--visible');
             });
         })
     });
