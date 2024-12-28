@@ -306,6 +306,10 @@ body {
     padding: 58px 0 40px;
   }
 
+  @media (max-width: 499px) {
+    padding: 35px 0 55px;
+  }
+
   @media (max-width: 1125px) {
     background: linear-gradient(180deg, #4f627f 0%, rgba(79, 98, 127, 0) 11%),
       url('../images/bg_hero_mob_x2.jpg') no-repeat center right/cover !important;
@@ -350,6 +354,10 @@ body {
         line-height: 1.125;
         color: var(--color-base);
         margin-bottom: 92px;
+
+        @media (max-width: 499px) {
+          margin-bottom: 92px;
+        }
       }
 
       .hero__button {
@@ -385,6 +393,10 @@ body {
   .title__wrapper {
     padding: 32px 0;
     background: var(--bg-title);
+
+    @media (max-width: 499px) {
+      padding: 14px 0 14px;
+    }
   }
 
   .services__content {
@@ -396,6 +408,10 @@ body {
       display: flex;
       flex-direction: column;
       /*min-height: 100%;*/
+    }
+
+    @media (max-width: 499px) {
+      padding: 35px 0 55px;
     }
   }
 }
@@ -526,6 +542,10 @@ body {
     text-align: left;
     margin-bottom: 30px;
 
+    @media (max-width: 499px) {
+      margin-bottom: 20px;
+    }
+
     span {
       display: inline-flex;
       font-family: 'Roboto', sans-serif;
@@ -607,6 +627,11 @@ body {
     row-gap: 18px;
     list-style-type: none;
     margin-bottom: 30px;
+
+    @media (max-width: 499px) {
+      row-gap: 8px;
+      margin-bottom: 20px;
+    }
   }
 
   .services-content__item {
@@ -631,6 +656,10 @@ body {
     width: 100%;
     margin-bottom: 25px;
 
+    @media (max-width: 499px) {
+      margin-bottom: 10px;
+    }
+
     p {
       font-family: 'Roboto', sans-serif;
       font-size: clamp(0.9375rem, 0.8617rem + 0.3236vw, 1.25rem);
@@ -650,10 +679,18 @@ body {
 
   .mySwiper1 {
     height: 382px;
+
+    @media (max-width: 499px) {
+      height: 240px;
+    }
   }
 
   .swiper-wrapper {
     height: 355px;
+
+    @media (max-width: 499px) {
+      height: 210px;
+    }
   }
 
   .swiper-slide {
@@ -681,6 +718,10 @@ body {
     @media (max-width: 1065px) {
       max-width: 290px;
       flex-direction: column;
+    }
+
+    @media (max-width: 499px) {
+      margin-bottom: 20px;
     }
   }
 
@@ -799,9 +840,17 @@ body {
         .mySwiper3 {
           height: 378px;
 
+          @media (max-width: 499px) {
+            height: 207px;
+          }
+
           .swiper-wrapper {
             margin-bottom: 20px;
             height: 355px;
+
+            @media (max-width: 499px) {
+              height: 184px;
+            }
 
             .swiper-slide {
               border-radius: 5px;
@@ -877,6 +926,10 @@ body {
 
         @media (max-width: 600px) {
           justify-content: center;
+        }
+
+        @media (max-width: 499px) {
+          gap: 20px;
         }
 
         .about-card-box__item {
@@ -1078,6 +1131,10 @@ body {
       @media (max-width: 899px) {
         width: 100%;
         grid-template-columns: 1fr;
+      }
+
+      @media (max-width: 499px) {
+        gap: 20px;
       }
 
       .news-body__item {
