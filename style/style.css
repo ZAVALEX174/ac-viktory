@@ -7,10 +7,10 @@
     --bg-title: #212934;
     --section-gradient: linear-gradient(
             180deg,
-            #4f627f 0%,
-            rgba(79, 98, 127, 0.35) 15%,
-            rgba(79, 98, 127, 0.35) 85%,
-            #4f627f 100%
+            #4f627f -40%,
+            rgba(79, 98, 127, 0.01) 15%,
+            rgba(79, 98, 127, 0.01) 85%,
+            #4f627f 140%
     );
 }
 
@@ -1384,5 +1384,85 @@ body {
     .logo__footer {
         width: 69px;
         height: 46px;
+        position: relative;
+        z-index: 15;
     }
+
+    .footer__navigation-box {
+        display: contents;
+
+        @media (max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            bottom: 0;
+            right: 0;
+            row-gap: 40px;
+            transition: 0.5s linear all;
+        }
+    }
+
+    .footer__navigation-box--open {
+        left: 0;
+        position: fixed;
+        background: black;
+        z-index: 10;
+    }
+
+    /*бургер меню*/
+    .burger-menu__footer {
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding: 8px 5px;
+        backdrop-filter: blur(5px);
+        cursor: pointer;
+
+        @media (max-width: 1023px) {
+            display: block;
+            position: relative;
+            z-index: 15;
+        }
+
+        .burger-line__footer {
+            position: relative;
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: var(--color-base);
+            z-index: 15;
+            border-radius: 30px;
+            transition: 0.3s linear all;
+        }
+
+        .burger-line__footer:nth-of-type(1) {
+            margin-bottom: 4px;
+        }
+
+        .burger-line__footer:nth-of-type(3) {
+            margin-top: 4px;
+        }
+    }
+
+    .burger-menu-footer-active > .burger-line__footer:nth-of-type(1) {
+        transform: rotate(45deg) translateX(8px) translateY(5px);
+        margin: 0;
+    }
+
+    .burger-menu-footer-active > .burger-line__footer:nth-of-type(2) {
+        width: 0;
+    }
+
+    .burger-menu-footer-active > .burger-line__footer:nth-of-type(3) {
+        transform: rotate(-45deg) translateX(-2px) translateY(5px);
+        margin: 0;
+    }
+
+
+
 }
