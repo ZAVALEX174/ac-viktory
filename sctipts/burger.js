@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         openBergerBtn.classList.remove('burger-menu-active');
         document.body.classList.remove('body-hidden');
     }
-    
+
     const contactBtnBurger = document.querySelector('.contact__link');
     contactBtnBurger.addEventListener("click", closeBurgerMenuItemClick);
 
