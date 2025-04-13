@@ -11,15 +11,7 @@
     <link rel="stylesheet" href="style/normalize.css"/>
     <link rel="stylesheet" href="style/swiper-bundle.css"/>
     <link rel="stylesheet" href="style/style.css"/>
-    <script src="sctipts/jquery-3.7.1.min.js" defer></script>
-    <script src="sctipts/burger.js" defer></script>
-    <script src="sctipts/sevrices-tabs.js" defer></script>
-    <script src="sctipts/open-menu-section.js" defer></script>
-    <script src="sctipts/swiper-bundle.js" defer></script>
-    <script src="sctipts/services-swiper.js" defer></script>
-    <script src="sctipts/arsenal-civilian-weapons-swiper.js" defer></script>
-    <script src="sctipts/about-swiper.js" defer></script>
-    <script src="sctipts/modals.js" defer></script>
+
 </head>
 <body>
 <header class="header">
@@ -701,22 +693,22 @@
                             <div class="filter">
                                 <span>Калибр:</span>
                                 <div class="filter-wrap-btns">
-                                    <a href="#bab-1-1" class="tabs-trigger__item2-f">12</a>
+                                    <a href="#bab-1-1"
+                                       class="tabs-trigger__item2-f tabs-trigger__item2-f--active">12</a>
                                     <a href="#bab-2-1" class="tabs-trigger__item2-f">9х19</a>
                                     <a href="#bab-3-1" class="tabs-trigger__item2-f"
                                     >7,62х54</a
                                     >
                                 </div>
                             </div>
-                            <div
-                                    class="services-content__slider arsenal-civilian-weapons__slider">
+                            <div class="services-content__slider arsenal-civilian-weapons__slider">
                                 <div class="swiper mySwiper2">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="swiper-slide-content">
+                                            <div class="swiper-slide-content" data-calibr="12">
                                                 <div class="swiper-slide-content__img">
                                                     <img
-                                                            src="images/gan.png"
+                                                            src="images/mc_200.png"
                                                             alt="Фото тира"
                                                             loading="lazy"/>
                                                 </div>
@@ -726,37 +718,65 @@
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="swiper-slide-content">
+                                            <div class="swiper-slide-content" data-calibr="12">
                                                 <div class="swiper-slide-content__img">
                                                     <img
-                                                            src="images/gan.png"
+                                                            src="images/BERETTA_686_Silver_Pigeon.png"
                                                             alt="Фото тира"
                                                             loading="lazy"/>
                                                 </div>
                                                 <div class="swiper-slide-content__description">
-                                                    <p>Ружьё МЦ-200</p>
+                                                    <p>BERETTA 686 Silver Pigeon</p>
+                                                    <p>Ствол 76мм</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="swiper-slide-content">
+                                            <div class="swiper-slide-content" data-calibr="12">
                                                 <div class="swiper-slide-content__img">
                                                     <img
-                                                            src="images/gan.png"
+                                                            src="images/BERNADELLI_MEGA_NIBBIO.jpg"
                                                             alt="Фото тира"
                                                             loading="lazy"/>
                                                 </div>
                                                 <div class="swiper-slide-content__description">
-                                                    <p>BERETTA 686 Silver</p>
-                                                    <p>Pigeon ствол 76 мм</p>
+                                                    <p>BBERNADELLI MEGA NIBBIO</p>
+                                                    <p></p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="swiper-slide-content">
+                                            <div class="swiper-slide-content" data-calibr="12">
                                                 <div class="swiper-slide-content__img">
                                                     <img
-                                                            src="images/gan.png"
+                                                            src="images/BERETTA_682.jpg"
+                                                            alt="Фото тира"
+                                                            loading="lazy"/>
+                                                </div>
+                                                <div class="swiper-slide-content__description">
+                                                    <p>BERETTA 682 E облегченная</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-content" data-calibr="12">
+                                                <div class="swiper-slide-content__img">
+                                                    <img
+                                                            src="images/mc_108.jpg"
+                                                            alt="Фото тира"
+                                                            loading="lazy"/>
+                                                </div>
+                                                <div class="swiper-slide-content__description">
+                                                    <p>Ружьё МЦ-108</p>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-content" data-calibr="12">
+                                                <div class="swiper-slide-content__img">
+                                                    <img
+                                                            src="images/mc_6.jpg"
                                                             alt="Фото тира"
                                                             loading="lazy"/>
                                                 </div>
@@ -765,42 +785,55 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--                                        =============-->
                                         <div class="swiper-slide">
-                                            <div class="swiper-slide-content">
+                                            <div class="swiper-slide-content" data-calibr="919">
                                                 <div class="swiper-slide-content__img">
                                                     <img
-                                                            src="images/gan.png"
+                                                            src="images/ppsch_luger.jpg"
                                                             alt="Фото тира"
                                                             loading="lazy"/>
                                                 </div>
                                                 <div class="swiper-slide-content__description">
-                                                    <p>BERETTA 686 Silver</p>
-                                                    <p>Pigeon ствол 76 мм</p>
+                                                    <p>ППШ luger</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="swiper-slide-content">
+                                            <div class="swiper-slide-content" data-calibr="919">
                                                 <div class="swiper-slide-content__img">
                                                     <img
-                                                            src="images/gan.png"
+                                                            src="images/sayga_9.jpg"
                                                             alt="Фото тира"
                                                             loading="lazy"/>
                                                 </div>
                                                 <div class="swiper-slide-content__description">
-                                                    <p>Ружьё МЦ-200</p>
+                                                    <p>САЙГА-9</p>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--                                        ====-->
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-content" data-calibr="76254">
+                                                <div class="swiper-slide-content__img">
+                                                    <img
+                                                            src="images/tiger.jpg"
+                                                            alt="Фото тира"
+                                                            loading="lazy"/>
+                                                </div>
+                                                <div class="swiper-slide-content__description">
+                                                    <p>ТИГР-9</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                            class="swiper-pagination services-content__slider-pagination"></div>
+                                    <div class="swiper-pagination services-content__slider-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <div id="bab-2-1" class="tabs-content__item2">
-                            <div
-                                    class="services-content__slider arsenal-civilian-weapons__slider">
+                            <div class="services-content__slider arsenal-civilian-weapons__slider">
                                 <div class="swiper mySwiper2">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -884,14 +917,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                            class="swiper-pagination services-content__slider-pagination"></div>
+                                    <div class="swiper-pagination services-content__slider-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <div id="bab-3-1" class="tabs-content__item2">
-                            <div
-                                    class="services-content__slider arsenal-civilian-weapons__slider">
+                            <div class="services-content__slider arsenal-civilian-weapons__slider">
                                 <div class="swiper mySwiper2">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -975,14 +1006,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                            class="swiper-pagination services-content__slider-pagination"></div>
+                                    <div class="swiper-pagination services-content__slider-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <div id="bab-4-1" class="tabs-content__item2">
-                            <div
-                                    class="services-content__slider arsenal-civilian-weapons__slider">
+                            <div class="services-content__slider arsenal-civilian-weapons__slider">
                                 <div class="swiper mySwiper2">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -1066,14 +1095,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                            class="swiper-pagination services-content__slider-pagination"></div>
+                                    <div class="swiper-pagination services-content__slider-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <div id="bab-5-1" class="tabs-content__item2">
-                            <div
-                                    class="services-content__slider arsenal-civilian-weapons__slider">
+                            <div class="services-content__slider arsenal-civilian-weapons__slider">
                                 <div class="swiper mySwiper2">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -1157,14 +1184,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                            class="swiper-pagination services-content__slider-pagination"></div>
+                                    <div class="swiper-pagination services-content__slider-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <div id="bab-6-1" class="tabs-content__item2">
-                            <div
-                                    class="services-content__slider arsenal-civilian-weapons__slider">
+                            <div class="services-content__slider arsenal-civilian-weapons__slider">
                                 <div class="swiper mySwiper2">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -1248,8 +1273,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                            class="swiper-pagination services-content__slider-pagination"></div>
+                                    <div class="swiper-pagination services-content__slider-pagination"></div>
                                 </div>
                             </div>
                         </div>
@@ -2087,5 +2111,15 @@
         </div>
     </div>
 </footer>
+<script src="sctipts/jquery-3.7.1.min.js" defer></script>
+<script src="sctipts/burger.js" defer></script>
+<script src="sctipts/sevrices-tabs.js" defer></script>
+
+<script src="sctipts/swiper-bundle.js" defer></script>
+<script src="sctipts/services-swiper.js" defer></script>
+<script src="sctipts/arsenal-civilian-weapons-swiper.js" defer></script>
+<script src="sctipts/open-menu-section.js" defer></script>
+<script src="sctipts/about-swiper.js" defer></script>
+<script src="sctipts/modals.js" defer></script>
 </body>
 </html>
