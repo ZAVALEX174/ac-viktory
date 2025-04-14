@@ -941,7 +941,7 @@ body {
     .arsenal-civilian-weapons__slider {
         width: 100%;
 
-        .mySwiper2 {
+        .mySwiper2, .mySwiper9x19, .mySwiper762x54 {
             height: 345px;
 
             @media (max-width: 608px) {
@@ -1034,6 +1034,18 @@ body {
         }
     }
 }
+
+/*.mySwiper9x19 {*/
+
+/*}*/
+
+/*@media (max-width: 608px) {*/
+/*    .mySwiper9x19 .swiper-slide {*/
+/*        height: 100px;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*}*/
 
 .about {
     .about__content {
@@ -2082,22 +2094,11 @@ body {
 
 
 
-.swiper-slide {
-    display: flex; /* По умолчанию показываем все */
+.tab-item {
+    display: none;
 }
 
-.swiper-slide[hidden],
-.swiper-slide.hidden {
-    display: none !important;
+.tab-item.active {
+    display: block;
 }
 
-.swiper-slide {
-    transition: opacity 0.3s ease;
-}
-
-.swiper-slide[hidden] {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
